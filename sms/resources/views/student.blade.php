@@ -8,10 +8,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Student Management System</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+  
+  @if($layout == 'index')
+  <div class="container-fluid">
+  <section></section>
+  <section></section>
+</div>
+@elseif($layout=='create')
+@elseif($layout=='show')
+@elseif($layout=='edit')
+@endif
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
