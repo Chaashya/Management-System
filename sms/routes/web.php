@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,11 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 */
+use App\Http\Controllers\StudentController;
 
-Route::get('/',"StudentController@index");
-Route::get('/edit/{id}',"StudentController@edit");
-Route::get('/show/{id}',"StudentController@show");
-Route::get('/create',"StudentController@create");
-Route::post('/store',"StudentController@store");
-Route::post('/update/{id}',"StudentController@update");
-
+Route::get('/',"App\Http\Controllers\StudentController@index") ;
+Route::get('/edit/{id}',"App\Http\Controllers\StudentController@edit") ;
+Route::get('/show/{id}',"App\Http\Controllers\StudentController@show") ;
+Route::get('/create',"App\Http\Controllers\StudentController@create") ;
+Route::post('/store',"App\Http\Controllers\StudentController@store") ;
+Route::post('/update/{id}',"App\Http\Controllers\StudentController@update") ;
