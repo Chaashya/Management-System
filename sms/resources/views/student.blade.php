@@ -13,9 +13,6 @@
 <body>
 @include("navbar")
 
-
-
-
 <div class="row header-container justify-content-center">
     <div class="header">
         <h1>Student Management System</h1>
@@ -41,9 +38,9 @@
             <section class="col-md-5">
 
                 <div class="card mb-3">
-                    <img src="https://marketplace.canva.com/MAB7yqsko0c/1/screen_2x/canva-smart-little-schoolgirl--MAB7yqsko0c.jpg" class="card-img-top" alt="...">
+                    <img src="https://densho.org/wp-content/uploads/2015/06/main2-2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Enter the informations of the new student</h5>
+                        <h5 class="card-title">Enter new student details</h5>
                         <form action="{{ url('/store') }}" method="post">
                             @csrf
                             <div class="form-group">
@@ -97,7 +94,7 @@
             <section class="col-md-5">
 
                 <div class="card mb-3">
-                    <img src="https://marketplace.canva.com/MAB7yqsko0c/1/screen_2x/canva-smart-little-schoolgirl--MAB7yqsko0c.jpg" class="card-img-top" alt="...">
+                    <img src="https://densho.org/wp-content/uploads/2015/06/main2-2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Update informations of student</h5>
                         <form action="{{ url('/update/'.$student->id) }}" method="post">
