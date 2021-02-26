@@ -1,4 +1,3 @@
-<div class="col">
 <table class="table">
   <thead class="thead-light">
     <tr>
@@ -11,12 +10,18 @@
     </tr>
   </thead>
   <tbody>
+  @foreach($students as $student)
     <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
+      <td>{{ $student-> cne}}</td>
+      <td>{{ $student-> firstName}}</td>
+      <td>{{ $student-> surname}}</td>
+      <td>{{ $student-> age}}</td>
+      <td>{{ $student-> specialty}}</td>
+      <td>
+      <a href="{{ url('/edit/'.$student->id) }}" class="btn btn-sm btn-warning">Edit</a>
+      </td>
+
     </tr>
+    @endforeach
   </tbody>
 </table>
-</div>
