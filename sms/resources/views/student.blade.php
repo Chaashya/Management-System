@@ -123,6 +123,7 @@
                             </div>
                             <input type="submit" class="btn btn-info" value="Update">
                             <input type="reset" class="btn btn-warning" value="Reset">
+                            <input type="submit" class="btn btn-danger" value="Delete" formaction="{{ url('/destroy/'.$student->id) }}">
 
                         </form>
                     </div>
