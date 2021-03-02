@@ -65,8 +65,8 @@
                                 <input name="age" type="text" class="form-control"  placeholder="Enter the Age">
                             </div>
                             <div class="form-group">
-                                <label>Speciality</label>
-                                <input name="speciality" type="text" class="form-control"  placeholder="Enter Specialty">
+                                <label>Specialty</label>
+                                <input name="specialty" type="text" class="form-control"  placeholder="Enter Specialty">
                             </div>
                             <input type="submit" class="btn btn-info" value="Save">
                             <input type="reset" class="btn btn-warning" value="Reset">
@@ -118,8 +118,8 @@
                                 <input value="{{ $student->age }}" name="age" type="text" class="form-control"  placeholder="Enter the Age">
                             </div>
                             <div class="form-group">
-                                <label>Speciality</label>
-                                <input value="{{ $student->speciality }}" name="speciality" type="text" class="form-control"  placeholder="Enter Specialty">
+                                <label>Specialty</label>
+                                <input value="{{ $student->specialty }}" name="specialty" type="text" class="form-control"  placeholder="Enter Specialty">
                             </div>
                             <input type="submit" class="btn btn-info" value="Update">
                             <input type="reset" class="btn btn-warning" value="Reset">

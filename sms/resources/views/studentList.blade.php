@@ -10,9 +10,9 @@
             <tr>
                 <th scope="col">CNE</th>
                 <th scope="col">First name</th>
-                <th scope="col">Second Name</th>
+                <th scope="col">Surname</th>
                 <th scope="col">Age</th>
-                <th scope="col">Speciality</th>
+                <th scope="col">Specialty</th>
                 <th scope="col">Operations</th>
 
             </tr>
@@ -22,9 +22,9 @@
                 <tr>
                     <td>{{ $student->cne }}</td>
                     <td>{{ $student->firstName }}</td>
-                    <td>{{ $student->secondName }}</td>
+                    <td>{{ $student->surname }}</td>
                     <td>{{ $student->age }}</td>
-                    <td>{{ $student->speciality }}</td>
+                    <td>{{ $student->specialty }}</td>
                     <td>
 
                         <a href="{{ url('/edit/'.$student->id) }}" class="btn btn-sm btn-warning">Edit</a>

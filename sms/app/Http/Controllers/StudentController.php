@@ -41,9 +41,9 @@ class StudentController extends Controller
         $student = new Student() ;
         $student->cne = $request->input('cne') ;
         $student->firstName = $request->input('firstName') ;
-        $student->secondName = $request->input('secondName') ;
+        $student->surname = $request->input('surname') ;
         $student->age = $request->input('age') ;
-        $student->speciality = $request->input('speciality') ;
+        $student->specialty = $request->input('specialty') ;
         $student->save() ;
         return redirect('/') ;
     }
@@ -88,9 +88,9 @@ class StudentController extends Controller
       $student = Student::find($id);
       $student->cne = $request->input('cne') ;
       $student->firstName = $request->input('firstName') ;
-      $student->secondName = $request->input('secondName') ;
+      $student->surname = $request->input('surname') ;
       $student->age = $request->input('age') ;
-      $student->speciality = $request->input('speciality') ;
+      $student->specialty = $request->input('specialty') ;
       $student->save() ;
       return redirect('/') ;
     }
